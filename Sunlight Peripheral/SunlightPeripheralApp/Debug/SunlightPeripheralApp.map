@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v15.9.0                     
 ******************************************************************************
->> Linked Mon Oct 19 14:51:51 2015
+>> Linked Tue Oct 20 14:00:42 2015
 
 OUTPUT FILE NAME:   <SunlightPeripheralApp.out>
 ENTRY POINT SYMBOL: "ResetISR"  address: 00004e4d
@@ -1271,8 +1271,8 @@ section   page    origin      length       input sections
 *          0    00000000    00000008     DSECT
                   00000000    00000008     boot.aem3 : boot.oem3 (.bootVecs)
 
-xdc.meta   0    00000000    000000ea     COPY SECTION
-                  00000000    000000ea     appBLEprintf_pem3.oem3 (xdc.meta)
+xdc.meta   0    00000000    00000105     COPY SECTION
+                  00000000    00000105     appBLEprintf_pem3.oem3 (xdc.meta)
 
 xdc.noload 
 *          0    00000000    00000000     COPY SECTION
@@ -1335,11 +1335,11 @@ MODULE SUMMARY
        Total:                     92      128       328    
                                                            
     C:\Users\fraw\AppData\Local\Temp\
-       421402                     0       0         46     
+       262922                     0       0         46     
     +--+--------------------------+-------+---------+---------+
        Total:                     0       0         46     
                                                            
-    D:\workspace_v6_1\SunlightPeripheralApp\Debug\configPkg\package\cfg\
+    D:\ASF\ti sensortag\Repo\Sunlight Peripheral\SunlightPeripheralApp\Debug\configPkg\package\cfg\
        appBLEprintf_pem3.oem3     888     1589      3540   
     +--+--------------------------+-------+---------+---------+
        Total:                     888     1589      3540   
@@ -1367,6 +1367,11 @@ MODULE SUMMARY
     +--+--------------------------+-------+---------+---------+
        Total:                     68      0         0      
                                                            
+    D:\ASF\ti sensortag\Repo\Sunlight Peripheral\SunlightPeripheralApp\TOOLS\src\sysbios\sysbios.aem3
+       mangled__BIOS_lib.obj      6257    17        28     
+    +--+--------------------------+-------+---------+---------+
+       Total:                     6257    17        28     
+                                                           
     D:\ti\ccsv6\tools\compiler\ti-cgt-arm_15.9.0.STS\lib\rtsv7M3_T_le_eabi.lib
        ull_div_t2.obj             500     0         0      
        memcpy_t2.obj              156     0         0      
@@ -1386,11 +1391,6 @@ MODULE SUMMARY
        i_div0.obj                 2       0         0      
     +--+--------------------------+-------+---------+---------+
        Total:                     1248    0         20     
-                                                           
-    D:\workspace_v6_1\SunlightPeripheralApp\TOOLS\src\sysbios\sysbios.aem3
-       mangled__BIOS_lib.obj      6257    17        28     
-    +--+--------------------------+-------+---------+---------+
-       Total:                     6257    17        28     
                                                            
        Stack:                     0       0         1024   
        Linker Generated:          464     2005      0      
@@ -1808,12 +1808,12 @@ UNDEFED   SHT$$INIT_ARRAY$$Limit
 00006be9  Util_startClock                                                           
 00006d27  Util_stopClock                                                            
 00000000  __ASM__                                                                   
-00000064  __ISA__                                                                   
-00000076  __PLAT__                                                                  
+0000007f  __ISA__                                                                   
+00000091  __PLAT__                                                                  
 200043c0  __STACK_END                                                               
 00000400  __STACK_SIZE                                                              
 200043c0  __STACK_TOP                                                               
-0000009d  __TARG__                                                                  
+000000b8  __TARG__                                                                  
 00007a18  __TI_CINIT_Base                                                           
 00007a80  __TI_CINIT_Limit                                                          
 000079b8  __TI_Handler_Table_Base                                                   
@@ -1825,7 +1825,7 @@ UNDEFED   SHT$$INIT_ARRAY$$Limit
 20002a50  __TI_dtors_ptr                                                            
 00007270  __TI_static_base__                                                        
 00006bf5  __TI_zero_init                                                            
-000000c2  __TRDR__                                                                  
+000000dd  __TRDR__                                                                  
 00000501  __aeabi_idiv0                                                             
 00006811  __aeabi_lmul                                                              
 00003ccd  __aeabi_memclr                                                            
@@ -2537,10 +2537,10 @@ address   name
 00000000  ti_sysbios_family_arm_m3_Hwi_resetVectors                                 
 00000001  xdc_runtime_Startup__EXECFXN__C                                           
 00000001  xdc_runtime_Startup__RESETFXN__C                                          
-00000064  __ISA__                                                                   
-00000076  __PLAT__                                                                  
-0000009d  __TARG__                                                                  
-000000c2  __TRDR__                                                                  
+0000007f  __ISA__                                                                   
+00000091  __PLAT__                                                                  
+000000b8  __TARG__                                                                  
+000000dd  __TRDR__                                                                  
 00000100  ti_sysbios_knl_Task_Object__PARAMS__C                                     
 0000013c  ti_sysbios_knl_Mailbox_Object__PARAMS__C                                  
 00000170  ti_sysbios_family_arm_m3_Hwi_Object__PARAMS__C                            
